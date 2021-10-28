@@ -1,16 +1,16 @@
 module.exports = {
     env: {
         browser: true,
-        es2021: true
+        es2021: true,
     },
     ignorePatterns: [
-        ".eslintrc.js",
-        "*.html"
+        '.eslintrc.js',
+         "*.html"
     ],
-    extends: ["plugin:sonarjs/recommended", "metarhia"],
-    plugins: ["sonarjs"],
+    extends: ['plugin:sonarjs/recommended', 'metarhia'],
+    plugins: ['sonarjs'],
     rules: {
-        quotes: ["error", "double", {"avoidEscape": true}],
-        "sonarjs/cognitive-complexity": ["error", 15]
-    }
+        quotes: ['error', 'double', { avoidEscape: true }],
+        'sonarjs/cognitive-complexity': ['error', 15],
+    },
 };
