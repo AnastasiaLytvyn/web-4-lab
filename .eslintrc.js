@@ -3,10 +3,7 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    ignorePatterns: [
-        '.eslintrc.js',
-         "*.html"
-    ],
+    ignorePatterns: ['.eslintrc.js', '*.html'],
     extends: ['plugin:sonarjs/recommended', 'metarhia'],
     plugins: ['sonarjs'],
     rules: {
