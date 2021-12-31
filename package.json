@@ -4,12 +4,12 @@
   "description": "",
   "scripts": {
     "prepare": "husky install",
-    "eslint": "eslint .",
-    "format": "prettier --check .",
-    "stylelint": "stylelint \"**/*.css\"",
-    "eslint:fix": "eslint . --fix",
-    "format:fix": "prettier --write .",
-    "stylelint:fix": "stylelint \"**/*.css\" --fix",
+    "eslint": "eslint . --ignore-path .gitignore",
+    "format": "prettier --check . --ignore-path .gitignore",
+    "stylelint": "stylelint \"**/*.css\" --ignore-path .gitignore",
+    "eslint:fix": "eslint . --fix --ignore-path .gitignore",
+    "format:fix": "prettier --write . --ignore-path .gitignore",
+    "stylelint:fix": "stylelint \"**/*.css\" --fix --ignore-path .gitignore",
     "pre-commit": "npm run eslint && npm run stylelint && npm run format"
   },
   "author": "",
