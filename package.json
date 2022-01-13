@@ -1,0 +1,27 @@
+{
+  "name": "web-2-lab",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prepare": "husky install",
+    "eslint": "eslint . --ignore-path .gitignore",
+    "format": "prettier --check . --ignore-path .gitignore",
+    "stylelint": "stylelint \"**/*.css\" --ignore-path .gitignore",
+    "eslint:fix": "eslint . --fix --ignore-path .gitignore",
+    "format:fix": "prettier --write . --ignore-path .gitignore",
+    "stylelint:fix": "stylelint \"**/*.css\" --fix --ignore-path .gitignore",
+    "pre-commit": "npm run eslint && npm run stylelint && npm run format"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "eslint-config-metarhia": "^7.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-sonarjs": "^0.10.0",
+    "husky": "^7.0.4",
+    "prettier": "2.4.1",
+    "stylelint": "^14.0.1",
+    "stylelint-config-standard": "^23.0.0"
+  }
+}
